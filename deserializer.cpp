@@ -19,7 +19,7 @@ Deserializer::Deserializer(QIODevice *device)
   // -----------------------
   read(data_size);
   m_buffer.seek(sizeof(qint64));
-  // ----------------------- reading rest of data and place buffer pos after data
+  // ----------------------- reading rest of data and place buffer position after data size
   // so now we can get data written by the Serializer by using 'stream'
 }
 
